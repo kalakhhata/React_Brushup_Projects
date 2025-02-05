@@ -1,0 +1,106 @@
+/* Accordion Wrapper */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f8f9fa; /* Light gray background */
+    padding: 20px;
+}
+
+/* Accordion Container */
+.accordian {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+/* Individual Item */
+.item {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Title Section */
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    background: #f1f3f5;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+/* Hover and Active States */
+.title:hover {
+    background: #e9ecef;
+}
+
+.title:active {
+    background: #dee2e6;
+}
+
+/* Expand Icon */
+.title span {
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+/* Smooth Appearance for Content */
+.content {
+    padding: 12px 16px;
+    background: #ffffff;
+    color: #495057;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Fade-In Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🔵 Enable Multiple Selection Button */
+.btn {
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+}
+
+/* Hover & Active States */
+.btn:hover {
+    background: #0056b3;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
