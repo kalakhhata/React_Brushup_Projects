@@ -7,6 +7,7 @@ import ImageSlider from './components/image-slider';
 import LoadMore from './components/load-more';
 import TreeMenu from './components/tree-view';
 import menus from './components/tree-view/data';
+import QRGenerator from './components/qr-generator';
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
       <LoadMore />
       {/* Tree View */}
       <TreeMenu menus={menus} />
+      {/* QR Code */}
+      <QRGenerator />
     </div>
   );
 }
